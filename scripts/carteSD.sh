@@ -1,12 +1,12 @@
 #!/bin/bash
 
 cd ~/.
-export DEWD=$PWD/de10nano-wd
+export DEWD=$HOME/de10nano-wd
 mkdir -p $DEWD
 cd $DEWD
 
 cd $DEWD
-mkdir sdcard
+mkdir -p sdcard
 cd sdcard
 
 
@@ -73,6 +73,11 @@ cd sdcard
 
 sudo dd if=../u-boot-2022.04/u-boot-with-spl.sfp of=${deviceloop}p3 bs=64k seek=0 oflag=sync
 
+# si directement sur la carte SD :
+sudo dd if=../u-boot-2022.04/u-boot-with-spl.sfp of=/dev/sdb3 bs=64k seek=0 oflag=sync
+sync
+sudo sync
+
 cd $DEWD
 cd sdcard
 mkdir -p fat
@@ -120,6 +125,8 @@ rm extlinux.conf
 # Delete the loopback device.
 sudo losetup -d ${deviceloop}
 
+# le resultat se trouve dans $DEWD/sdcard/sdcard.img
+# restaurer l'image disque sur une carte SD avec l'utilitaire de disque
 
 
 

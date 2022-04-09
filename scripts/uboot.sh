@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~/.
-export DEWD=$PWD/de10nano-wd
+export DEWD=$HOME/de10nano-wd
 mkdir -p $DEWD
 cd $DEWD
 
@@ -10,6 +10,7 @@ wget https://github.com/u-boot/u-boot/archive/refs/tags/v2022.04.tar.gz
 mv v2022.04.tar.gz uboot-v2022.04.tar.gz
 # extraction dans u-boot-2022.04/
 tar -xvzf uboot-v2022.04.tar.gz
+cd $DEWD
 cd u-boot-2022.04
 gedit include/config_distro_bootcmd.h
 #  "distro_bootcmd= " \
@@ -32,6 +33,14 @@ gedit include/config_distro_bootcmd.h
 #      "run bootcmd_${target}; "                         \
 #    "done\0"
 
+### et aussi ajouter
+
+#ifndef CONFIG_BOOTCOMMAND
+#define CONFIG_BOOTCOMMAND "run distro_bootcmd"
+#endif
+
+
+
 # generer une adresse ethernet au hazard
 cd $DEWD/u-boot-2022.04
 make -C tools gen_eth_addr
@@ -47,9 +56,10 @@ gedit include/configs/socfpga_common.h
 cd $DEWD/u-boot-2022.04
 export CROSS_COMPILE=$DEWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
 make ARCH=arm socfpga_de10_nano_defconfig
-make ARCH=arm menuconfig
+##### make ARCH=arm menuconfig
 make ARCH=arm -j 4
 
 # le resultat se trouve dans $DEWD/u-boot-2022.04/u-boot-with-spl.sfp
+
 
 

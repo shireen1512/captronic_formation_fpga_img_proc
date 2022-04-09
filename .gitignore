@@ -1,0 +1,10 @@
+
+quartus_proj/blink/db/*
+quartus_proj/blink/incremental_db/*
+quartus_proj/blink/simulation/*
+
+quartus_proj/ghrd_adder/db/*
+quartus_proj/ghrd_adder/incremental_db/*
+quartus_proj/ghrd_adder/simulation/*
+quartus_proj/ghrd_adder/soc_system/simulation/*
+

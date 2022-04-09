@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+   <description preferredWidth="217" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Basic Functions,Project,Library/Basic Functions/Bridges and Adaptors,Library,Library/Basic Functions/Bridges and Adaptors/Memory Mapped" />
+ <window width="1670" height="912" x="68" y="145" />
+ <generation path="_PROJECT_NAME_" />
+</preferences>
