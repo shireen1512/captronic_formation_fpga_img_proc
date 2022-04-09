@@ -8,3 +8,8 @@ quartus_proj/ghrd_adder/incremental_db/*
 quartus_proj/ghrd_adder/simulation/*
 quartus_proj/ghrd_adder/soc_system/simulation/*
 
+quartus_proj/ghrd_sdram/db/*
+quartus_proj/ghrd_sdram/incremental_db/*
+quartus_proj/ghrd_sdram/simulation/*
+quartus_proj/ghrd_sdram/soc_system/simulation/*
+
