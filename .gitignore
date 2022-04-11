@@ -13,3 +13,9 @@ quartus_proj/ghrd_sdram/incremental_db/*
 quartus_proj/ghrd_sdram/simulation/*
 quartus_proj/ghrd_sdram/soc_system/simulation/*
 
+quartus_proj/ghrd_sdram_vhdl/db/*
+quartus_proj/ghrd_sdram_vhdl/incremental_db/*
+quartus_proj/ghrd_sdram_vhdl/simulation/*
+quartus_proj/ghrd_sdram_vhdl/soc_system/simulation/*
+
+

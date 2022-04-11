@@ -62,7 +62,7 @@ Hit any key to stop autoboot:  0
 => 
 => 
 mw 0xFFC25080 0x0
-fatload mmc 0:1 0x2000000 sdr.rbf
+fatload mmc 0:1 0x2000000 soc_system.rbf
 fpga load 0 0x2000000 0x700000
 mw 0xFFC2505C 0xA
 mw 0xFFC25080 0xFFFF
@@ -77,10 +77,38 @@ mem 0xC0000000 w 0x1
 mem 0x20000000 w 0xFF
 mem 0xC0000000 w 0x1
 
-Les leds s'allument bien soit en allternance, soit toutes.
+Les leds s allument bien soit en allternance, soit toutes.
 
+## VHDL
+cd $DEWD
+cd ghrd_sdram_vhdl/output_files
+scp comm_ram_vhdl.rbf  root@192.168.1.30:~
 
+ssh root@192.168.1.30
 
+mkdir -p fat
+mount /dev/mmcblk0p1 fat
+cp comm_ram_vhdl.rbf fat/soc_system.rbf 
+umount fat
+reboot
 
+alias mem='busybox devmem'
+
+mem 0x20000000
+mem 0x20000000 w 0xAA
+mem 0x20000000
+
+mem 536871168
+mem 0xC0000000 w 0x1
+mem 536871168
+
+mem 0x20000000
+mem 0x20000000 w 0xFF
+mem 0x20000000
+
+mem 0xC0000000 w 0x1
+
+# 256 plus loin
+mem 536871168
 
 
