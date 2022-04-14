@@ -17,8 +17,8 @@ sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
 
 sudo chroot rootfs /usr/bin/qemu-arm-static /bin/bash -i
 
+apt install wget
 /debootstrap/debootstrap --second-stage
-
 
 apt install vim -y
 

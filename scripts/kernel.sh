@@ -17,8 +17,8 @@ cd linux-socfpga-socfpga-5.16/
 make ARCH=arm CROSS_COMPILE=$DEWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf- socfpga_defconfig
 
 make ARCH=arm CROSS_COMPILE=$DEWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf- menuconfig
-# suivre les instructions de https://github.com/zangman/de10-nano/wiki/Building-the-Kernel
+# suivre les instructions de https://bitlog.it/20170820_building_embedded_linux_for_the_terasic_de10-nano.html et https://github.com/zangman/de10-nano/wiki/Building-the-Kernel
 
-make ARCH=arm CROSS_COMPILE=$DEWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf- LOCALVERSION=zImage -j 4
+make ARCH=arm CROSS_COMPILE=$DEWD/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf- LOCALVERSION=zImage -j 9
 
 # le resultat se trouve dans $DEWD/linux-socfpga-socfpga-5.16/arch/arm/boot/zImage
