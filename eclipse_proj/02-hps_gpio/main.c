@@ -1,11 +1,3 @@
-/*
- * main.c
- *
- *  Created on: 14 avr. 2022
- *      Author: jmecodol
- */
-
-
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -73,4 +65,3 @@ int main(int argc, char **argv) {
 	close( fd );
 	return( 0 );
 }
-

@@ -1,16 +1,12 @@
 /*
  * main.c
  *
- *  Created on: 14 avr. 2022
+ *  Created on: 16 avr. 2022
  *      Author: jmecodol
  */
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
 
 int main(int argc, char **argv) {
-	printf("hello Cross Compile \n") ;
+	printf("test 01-main\n") ;
 	return 0 ;
 }
-
