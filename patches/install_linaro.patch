@@ -1,0 +1,29 @@
+--- install_linaro.sh	2022-04-17 14:05:16.639268854 +0000
++++ install_linaro_new.sh	2022-04-17 14:06:17.887862457 +0000
+@@ -35,14 +35,14 @@
+ then
+ 	GCCFILE=gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-eabi
+ else
+-	GCCFILE=gcc-linaro-7.5.0-2019.12-i686_arm-eabi
++	GCCFILE=gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf
+ fi
+ 
+ if [ -f ${GCCFILE}.tar.xz ]
+ then
+ 	echo Linaro toolchain tarball found, skipping download
+ else
+-	wget http://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-eabi/${GCCFILE}.tar.xz -O ${GCCFILE}.tar.xz
++	wget http://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/${GCCFILE}.tar.xz
+ fi
+ rm -rf $INSTALL_DIR/$GCCFILE
+ tar xvf ${GCCFILE}.tar.xz -C $INSTALL_DIR/
+@@ -66,7 +66,7 @@
+ rm -rf build
+ mkdir build
+ cd build
+-../configure --target=arm-eabi --disable-newlib-supplied-syscalls --disable-multilib
+-make all -j16
++../configure --target=arm-linux-gnueabihf --disable-newlib-supplied-syscalls --disable-multilib
++make all -j9
+ make install DESTDIR=$INSTALL_DIR/newlib
+ popd
