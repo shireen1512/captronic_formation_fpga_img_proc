@@ -1,0 +1,10 @@
+--- socfpga_common.h	2022-04-17 22:21:54.331947934 +0000
++++ socfpga_common_new.h	2022-04-17 22:22:34.856314497 +0000
+@@ -246,6 +246,7 @@
+ 	"pxefile_addr_r=0x02200000\0" \
+ 	"ramdisk_addr_r=0x02300000\0" \
+ 	"socfpga_legacy_reset_compat=1\0" \
++	"ethaddr=56:42:1f:e6:6f:68\0" \
+ 	BOOTENV
+ 
+ #endif
