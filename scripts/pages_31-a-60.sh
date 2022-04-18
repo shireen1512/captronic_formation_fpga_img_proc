@@ -7,7 +7,7 @@
 export DEWD=$HOME/de10nano-wd
 MY_USER=ubuntu
 SERVER_ADDR=51.210.241.245
-DE10NA_ADDR=192.168.1.38
+DE10NA_ADDR=192.168.1.16
 
 cd $DEWD
 git clone https://github.com/jmecodol/captronic_formation_fpga_img_proc.git
@@ -22,9 +22,9 @@ mkdir -p $DEWD/remote_de10_nano/
 ssh-keygen -f "$HOME/.ssh/known_hosts" -R $SERVER_ADDR
 ssh-keygen -f "$HOME/.ssh/known_hosts" -R $DE10NA_ADDR
 sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 \
-user[1:5]@$SERVER_ADDR: $DEWD/remote/
+$MY_USER@$SERVER_ADDR: $DEWD/remote/
 sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 \
-user[1:5]@$DE10NA_ADDR: $DEWD/remote_de10_nano/
+root@$DE10NA_ADDR: $DEWD/remote_de10_nano/
 
 
 ###########

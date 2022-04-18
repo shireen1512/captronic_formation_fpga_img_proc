@@ -1,0 +1,1 @@
+diff -u fichier fichier_new > fichier.patch

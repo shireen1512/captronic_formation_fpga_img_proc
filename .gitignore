@@ -19,3 +19,9 @@ quartus_proj/ghrd_sdram_vhdl/simulation/*
 quartus_proj/ghrd_sdram_vhdl/soc_system/simulation/*
 
 
+quartus_proj/DE10_NANO_SoC_GHRD/db/*
+quartus_proj/DE10_NANO_SoC_GHRD/incremental_db/*
+quartus_proj/DE10_NANO_SoC_GHRD/simulation/*
+quartus_proj/DE10_NANO_SoC_GHRD/soc_system/simulation/*
+
+
