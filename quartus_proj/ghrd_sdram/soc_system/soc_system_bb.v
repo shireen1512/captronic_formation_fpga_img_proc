@@ -19,7 +19,7 @@ module soc_system (
 	memory_mem_dm,
 	memory_oct_rzqin,
 	reset_reset_n,
-	out_data_export);	
+	out_data_readdata);	
 
 	input		clk_clk;
 	output		hps_0_h2f_reset_reset_n;
@@ -40,5 +40,5 @@ module soc_system (
 	output	[3:0]	memory_mem_dm;
 	input		memory_oct_rzqin;
 	input		reset_reset_n;
-	output	[255:0]	out_data_export;
+	output	[255:0]	out_data_readdata;
 endmodule

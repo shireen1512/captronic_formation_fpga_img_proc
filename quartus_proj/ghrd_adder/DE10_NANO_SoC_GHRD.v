@@ -39,29 +39,28 @@ module DE10_NANO_SoC_GHRD(
 wire hps_fpga_reset_n;
 wire                fpga_clk_50;
 wire [6:0]	fpga_led_internal;
-wire [63:0] adder_a_export;
-wire [63:0] adder_b_export;
-wire [63:0] adder_sum_export;
+
+wire[63:0] adder_a_export ;
+wire[63:0] adder_b_export ;
+wire[63:0] adder_sum_export ;
 
 // connection of internal logics
 assign LED[7: 1] = fpga_led_internal;
 assign fpga_clk_50 = FPGA_CLK1_50;
 
-simple_adder my_adder(
+signed_adder my_adder(
   .a(adder_a_export),
   .b(adder_b_export),
-  .sum(adder_sum_export)
-);
-
+  .result(adder_sum_export)
+  );
 
 //=======================================================
 //  Structural coding
 //=======================================================
 soc_system u0(
-               // Adder
-		  .adder_a_export(adder_a_export),
-		  .adder_b_export(adder_b_export),
-		  .adder_sum_export(adder_sum_export),
+					.adder_a_export(adder_a_export),
+					.adder_b_export(adder_b_export),
+					.adder_sum_export(adder_sum_export),
                //Clock&Reset
                .clk_clk(FPGA_CLK1_50),                                      //                            clk.clk
                .reset_reset_n(hps_fpga_reset_n),                            //                          reset.reset_n
@@ -82,7 +81,8 @@ soc_system u0(
                .memory_mem_odt(HPS_DDR3_ODT),                               //                               .mem_odt
                .memory_mem_dm(HPS_DDR3_DM),                                 //                               .mem_dm
                .memory_oct_rzqin(HPS_DDR3_RZQ),                             //                               .oct_rzqin
-               .hps_0_h2f_reset_reset_n(hps_fpga_reset_n)                   //                               .hps_0_h2f_reset.reset_n
+              
+               .hps_0_h2f_reset_reset_n(hps_fpga_reset_n)                  //                hps_0_h2f_reset.reset_n
       
            );
 

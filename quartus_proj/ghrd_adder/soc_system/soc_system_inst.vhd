@@ -1,7 +1,9 @@
 	component soc_system is
 		port (
+			adder_a_export          : out   std_logic_vector(63 downto 0);                    -- export
+			adder_b_export          : out   std_logic_vector(63 downto 0);                    -- export
+			adder_sum_export        : in    std_logic_vector(63 downto 0) := (others => 'X'); -- export
 			clk_clk                 : in    std_logic                     := 'X';             -- clk
-			hps_0_h2f_reset_reset_n : out   std_logic;                                        -- reset_n
 			memory_mem_a            : out   std_logic_vector(14 downto 0);                    -- mem_a
 			memory_mem_ba           : out   std_logic_vector(2 downto 0);                     -- mem_ba
 			memory_mem_ck           : out   std_logic;                                        -- mem_ck
@@ -19,16 +21,16 @@
 			memory_mem_dm           : out   std_logic_vector(3 downto 0);                     -- mem_dm
 			memory_oct_rzqin        : in    std_logic                     := 'X';             -- oct_rzqin
 			reset_reset_n           : in    std_logic                     := 'X';             -- reset_n
-			adder_a_export          : out   std_logic_vector(63 downto 0);                    -- export
-			adder_b_export          : out   std_logic_vector(63 downto 0);                    -- export
-			adder_sum_export        : in    std_logic_vector(63 downto 0) := (others => 'X')  -- export
+			hps_0_h2f_reset_reset_n : out   std_logic                                         -- reset_n
 		);
 	end component soc_system;
 
 	u0 : component soc_system
 		port map (
+			adder_a_export          => CONNECTED_TO_adder_a_export,          --         adder_a.export
+			adder_b_export          => CONNECTED_TO_adder_b_export,          --         adder_b.export
+			adder_sum_export        => CONNECTED_TO_adder_sum_export,        --       adder_sum.export
 			clk_clk                 => CONNECTED_TO_clk_clk,                 --             clk.clk
-			hps_0_h2f_reset_reset_n => CONNECTED_TO_hps_0_h2f_reset_reset_n, -- hps_0_h2f_reset.reset_n
 			memory_mem_a            => CONNECTED_TO_memory_mem_a,            --          memory.mem_a
 			memory_mem_ba           => CONNECTED_TO_memory_mem_ba,           --                .mem_ba
 			memory_mem_ck           => CONNECTED_TO_memory_mem_ck,           --                .mem_ck
@@ -46,8 +48,6 @@
 			memory_mem_dm           => CONNECTED_TO_memory_mem_dm,           --                .mem_dm
 			memory_oct_rzqin        => CONNECTED_TO_memory_oct_rzqin,        --                .oct_rzqin
 			reset_reset_n           => CONNECTED_TO_reset_reset_n,           --           reset.reset_n
-			adder_a_export          => CONNECTED_TO_adder_a_export,          --         adder_a.export
-			adder_b_export          => CONNECTED_TO_adder_b_export,          --         adder_b.export
-			adder_sum_export        => CONNECTED_TO_adder_sum_export         --       adder_sum.export
+			hps_0_h2f_reset_reset_n => CONNECTED_TO_hps_0_h2f_reset_reset_n  -- hps_0_h2f_reset.reset_n
 		);
 

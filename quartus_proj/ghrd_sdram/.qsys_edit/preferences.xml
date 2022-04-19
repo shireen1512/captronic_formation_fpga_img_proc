@@ -5,9 +5,9 @@
   <columns>
    <connections preferredWidth="127" />
    <irq preferredWidth="34" />
+   <name preferredWidth="199" />
   </columns>
  </systemtable>
- <library expandedCategories="Project,Library" />
- <window width="960" height="987" x="960" y="27" />
- <generation path="_PROJECT_NAME_" />
+ <library expandedCategories="Library,Project" />
+ <window width="1572" height="910" x="217" y="38" />
 </preferences>

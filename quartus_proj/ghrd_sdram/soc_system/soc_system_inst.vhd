@@ -19,7 +19,7 @@
 			memory_mem_dm           : out   std_logic_vector(3 downto 0);                      -- mem_dm
 			memory_oct_rzqin        : in    std_logic                      := 'X';             -- oct_rzqin
 			reset_reset_n           : in    std_logic                      := 'X';             -- reset_n
-			out_data_export         : out   std_logic_vector(255 downto 0)                     -- export
+			out_data_readdata       : out   std_logic_vector(255 downto 0)                     -- readdata
 		);
 	end component soc_system;
 
@@ -44,6 +44,6 @@
 			memory_mem_dm           => CONNECTED_TO_memory_mem_dm,           --                .mem_dm
 			memory_oct_rzqin        => CONNECTED_TO_memory_oct_rzqin,        --                .oct_rzqin
 			reset_reset_n           => CONNECTED_TO_reset_reset_n,           --           reset.reset_n
-			out_data_export         => CONNECTED_TO_out_data_export          --        out_data.export
+			out_data_readdata       => CONNECTED_TO_out_data_readdata        --        out_data.readdata
 		);
 

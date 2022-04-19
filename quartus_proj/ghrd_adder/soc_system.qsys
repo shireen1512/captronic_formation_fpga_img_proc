@@ -9,6 +9,54 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element avalon_agent_readHPS_0
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element avalon_agent_readHPS_0.s0
+   {
+      datum baseAddress
+      {
+         value = "16";
+         type = "String";
+      }
+   }
+   element avalon_agent_readHPS_1
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element avalon_agent_readHPS_1.s0
+   {
+      datum baseAddress
+      {
+         value = "8";
+         type = "String";
+      }
+   }
+   element avalon_agent_send2HPS_0
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element avalon_agent_send2HPS_0.s0
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
    element clk_0
    {
       datum _sortIndex
@@ -51,54 +99,6 @@
          type = "String";
       }
    }
-   element pio64_in_0
-   {
-      datum _sortIndex
-      {
-         value = "5";
-         type = "int";
-      }
-   }
-   element pio64_in_0.s0
-   {
-      datum baseAddress
-      {
-         value = "0";
-         type = "String";
-      }
-   }
-   element pio64_out_0
-   {
-      datum _sortIndex
-      {
-         value = "3";
-         type = "int";
-      }
-   }
-   element pio64_out_0.s0
-   {
-      datum baseAddress
-      {
-         value = "16";
-         type = "String";
-      }
-   }
-   element pio64_out_1
-   {
-      datum _sortIndex
-      {
-         value = "4";
-         type = "int";
-      }
-   }
-   element pio64_out_1.s0
-   {
-      datum baseAddress
-      {
-         value = "8";
-         type = "String";
-      }
-   }
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
@@ -122,17 +122,17 @@
  <instanceScript></instanceScript>
  <interface
    name="adder_a"
-   internal="pio64_out_0.pio64_out"
+   internal="avalon_agent_readHPS_0.pio_out"
    type="conduit"
    dir="end" />
  <interface
    name="adder_b"
-   internal="pio64_out_1.pio64_out"
+   internal="avalon_agent_readHPS_1.pio_out"
    type="conduit"
    dir="end" />
  <interface
    name="adder_sum"
-   internal="pio64_in_0.pio64_in"
+   internal="avalon_agent_send2HPS_0.pio_in"
    type="conduit"
    dir="end" />
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
@@ -149,6 +149,27 @@
  <interface name="hps_0_hps_io" internal="hps_0.hps_io" />
  <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <module
+   name="avalon_agent_readHPS_0"
+   kind="avalon_agent_readHPS"
+   version="1.0"
+   enabled="1">
+  <parameter name="DATA_WIDTH" value="64" />
+ </module>
+ <module
+   name="avalon_agent_readHPS_1"
+   kind="avalon_agent_readHPS"
+   version="1.0"
+   enabled="1">
+  <parameter name="DATA_WIDTH" value="64" />
+ </module>
+ <module
+   name="avalon_agent_send2HPS_0"
+   kind="avalon_agent_send2HPS"
+   version="1.0"
+   enabled="1">
+  <parameter name="DATA_WIDTH" value="64" />
+ </module>
  <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -703,9 +724,6 @@
   <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
   <parameter name="USE_RESPONSE" value="0" />
  </module>
- <module name="pio64_in_0" kind="pio64_in" version="1.0" enabled="1" />
- <module name="pio64_out_0" kind="pio64_out" version="1.0" enabled="1" />
- <module name="pio64_out_1" kind="pio64_out" version="1.0" enabled="1" />
  <connection
    kind="avalon"
    version="20.1"
@@ -719,7 +737,7 @@
    kind="avalon"
    version="20.1"
    start="mm_bridge_0.m0"
-   end="pio64_out_0.s0">
+   end="avalon_agent_readHPS_0.s0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0010" />
   <parameter name="defaultConnection" value="false" />
@@ -728,7 +746,7 @@
    kind="avalon"
    version="20.1"
    start="mm_bridge_0.m0"
-   end="pio64_out_1.s0">
+   end="avalon_agent_readHPS_1.s0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0008" />
   <parameter name="defaultConnection" value="false" />
@@ -737,15 +755,27 @@
    kind="avalon"
    version="20.1"
    start="mm_bridge_0.m0"
-   end="pio64_in_0.s0">
+   end="avalon_agent_send2HPS_0.s0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="clock" version="20.1" start="clk_0.clk" end="mm_bridge_0.clk" />
- <connection kind="clock" version="20.1" start="clk_0.clk" end="pio64_out_0.clock" />
- <connection kind="clock" version="20.1" start="clk_0.clk" end="pio64_out_1.clock" />
- <connection kind="clock" version="20.1" start="clk_0.clk" end="pio64_in_0.clock" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="avalon_agent_readHPS_0.clock" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="avalon_agent_readHPS_1.clock" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="clk_0.clk"
+   end="avalon_agent_send2HPS_0.clock" />
  <connection
    kind="clock"
    version="20.1"
@@ -755,22 +785,22 @@
    kind="reset"
    version="20.1"
    start="clk_0.clk_reset"
+   end="avalon_agent_readHPS_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="avalon_agent_readHPS_1.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
+   end="avalon_agent_send2HPS_0.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="clk_0.clk_reset"
    end="mm_bridge_0.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="clk_0.clk_reset"
-   end="pio64_out_0.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="clk_0.clk_reset"
-   end="pio64_out_1.reset" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="clk_0.clk_reset"
-   end="pio64_in_0.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>

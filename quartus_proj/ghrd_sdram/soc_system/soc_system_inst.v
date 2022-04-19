@@ -18,6 +18,6 @@
 		.memory_mem_dm           (<connected-to-memory_mem_dm>),           //                .mem_dm
 		.memory_oct_rzqin        (<connected-to-memory_oct_rzqin>),        //                .oct_rzqin
 		.reset_reset_n           (<connected-to-reset_reset_n>),           //           reset.reset_n
-		.out_data_export         (<connected-to-out_data_export>)          //        out_data.export
+		.out_data_readdata       (<connected-to-out_data_readdata>)        //        out_data.readdata
 	);
 

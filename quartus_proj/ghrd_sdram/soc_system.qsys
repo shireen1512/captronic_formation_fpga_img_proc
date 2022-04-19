@@ -9,7 +9,7 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
-   element avalon_control_0
+   element avalon_agent_readHPS_0
    {
       datum _sortIndex
       {
@@ -17,7 +17,7 @@
          type = "int";
       }
    }
-   element avalon_control_0.s0
+   element avalon_agent_readHPS_0.s0
    {
       datum baseAddress
       {
@@ -25,7 +25,7 @@
          type = "String";
       }
    }
-   element avalon_sdr_0
+   element avalon_sdr_vhdl_0
    {
       datum _sortIndex
       {
@@ -37,7 +37,7 @@
    {
       datum _sortIndex
       {
-         value = "0";
+         value = "1";
          type = "int";
       }
       datum sopceditor_expanded
@@ -50,7 +50,7 @@
    {
       datum _sortIndex
       {
-         value = "1";
+         value = "0";
          type = "int";
       }
       datum sopceditor_expanded
@@ -64,30 +64,6 @@
       datum baseAddress
       {
          value = "0";
-         type = "String";
-      }
-   }
-   element soc_system
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Cyclone V";
-         type = "String";
-      }
-   }
-   element soc_system
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Cyclone V";
-         type = "String";
-      }
-   }
-   element soc_system
-   {
-      datum _originalDeviceFamily
-      {
-         value = "Cyclone V";
          type = "String";
       }
    }
@@ -127,16 +103,22 @@
  <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
  <interface
    name="out_data"
-   internal="avalon_sdr_0.out_data"
+   internal="avalon_sdr_vhdl_0.out_data"
    type="conduit"
    dir="end" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <module
-   name="avalon_control_0"
-   kind="avalon_control"
+   name="avalon_agent_readHPS_0"
+   kind="avalon_agent_readHPS"
+   version="1.0"
+   enabled="1">
+  <parameter name="DATA_WIDTH" value="64" />
+ </module>
+ <module
+   name="avalon_sdr_vhdl_0"
+   kind="avalon_sdr_vhdl"
    version="1.0"
    enabled="1" />
- <module name="avalon_sdr_0" kind="avalon_sdr" version="1.0" enabled="1" />
  <module name="clk_0" kind="clock_source" version="20.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -515,7 +497,7 @@
   <parameter name="S2FINTERRUPT_UART_Enable" value="false" />
   <parameter name="S2FINTERRUPT_USB_Enable" value="false" />
   <parameter name="S2FINTERRUPT_WATCHDOG_Enable" value="false" />
-  <parameter name="S2F_Width" value="1" />
+  <parameter name="S2F_Width" value="2" />
   <parameter name="SDIO_Mode" value="N/A" />
   <parameter name="SDIO_PinMuxing" value="Unused" />
   <parameter name="SEQUENCER_TYPE" value="NIOS" />
@@ -677,7 +659,7 @@
    kind="avalon"
    version="20.1"
    start="hps_0.h2f_axi_master"
-   end="avalon_control_0.s0">
+   end="avalon_agent_readHPS_0.s0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
@@ -685,7 +667,7 @@
  <connection
    kind="avalon"
    version="20.1"
-   start="avalon_sdr_0.m0"
+   start="avalon_sdr_vhdl_0.m0"
    end="hps_0.f2h_sdram0_data">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
@@ -695,12 +677,12 @@
    kind="clock"
    version="20.1"
    start="clk_0.clk"
-   end="avalon_control_0.clock" />
+   end="avalon_agent_readHPS_0.clock" />
  <connection
    kind="clock"
    version="20.1"
    start="clk_0.clk"
-   end="avalon_sdr_0.clock" />
+   end="avalon_sdr_vhdl_0.clock" />
  <connection
    kind="clock"
    version="20.1"
@@ -714,8 +696,8 @@
  <connection
    kind="conduit"
    version="20.1"
-   start="avalon_sdr_0.do_read"
-   end="avalon_control_0.do_read">
+   start="avalon_sdr_vhdl_0.start_process"
+   end="avalon_agent_readHPS_0.trigger">
   <parameter name="endPort" value="" />
   <parameter name="endPortLSB" value="0" />
   <parameter name="startPort" value="" />
@@ -726,12 +708,12 @@
    kind="reset"
    version="20.1"
    start="clk_0.clk_reset"
-   end="avalon_sdr_0.reset" />
+   end="avalon_agent_readHPS_0.reset" />
  <connection
    kind="reset"
    version="20.1"
    start="clk_0.clk_reset"
-   end="avalon_control_0.reset" />
+   end="avalon_sdr_vhdl_0.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
 </system>

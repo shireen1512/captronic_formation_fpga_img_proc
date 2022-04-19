@@ -1,6 +1,8 @@
 	soc_system u0 (
+		.adder_a_export          (<connected-to-adder_a_export>),          //         adder_a.export
+		.adder_b_export          (<connected-to-adder_b_export>),          //         adder_b.export
+		.adder_sum_export        (<connected-to-adder_sum_export>),        //       adder_sum.export
 		.clk_clk                 (<connected-to-clk_clk>),                 //             clk.clk
-		.hps_0_h2f_reset_reset_n (<connected-to-hps_0_h2f_reset_reset_n>), // hps_0_h2f_reset.reset_n
 		.memory_mem_a            (<connected-to-memory_mem_a>),            //          memory.mem_a
 		.memory_mem_ba           (<connected-to-memory_mem_ba>),           //                .mem_ba
 		.memory_mem_ck           (<connected-to-memory_mem_ck>),           //                .mem_ck
@@ -18,8 +20,6 @@
 		.memory_mem_dm           (<connected-to-memory_mem_dm>),           //                .mem_dm
 		.memory_oct_rzqin        (<connected-to-memory_oct_rzqin>),        //                .oct_rzqin
 		.reset_reset_n           (<connected-to-reset_reset_n>),           //           reset.reset_n
-		.adder_a_export          (<connected-to-adder_a_export>),          //         adder_a.export
-		.adder_b_export          (<connected-to-adder_b_export>),          //         adder_b.export
-		.adder_sum_export        (<connected-to-adder_sum_export>)         //       adder_sum.export
+		.hps_0_h2f_reset_reset_n (<connected-to-hps_0_h2f_reset_reset_n>)  // hps_0_h2f_reset.reset_n
 	);
 
