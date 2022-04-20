@@ -8,6 +8,7 @@
    <name preferredWidth="199" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
+ <library
+   expandedCategories="Library/University Program,Library,Library/University Program/Audio &amp; Video/Video,Project,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/University Program/Audio &amp; Video,Library/Basic Functions/Bridges and Adaptors,Library/Memory Interfaces and Controllers/Memory Interfaces with UniPHY,Library/Basic Functions,Library/Memory Interfaces and Controllers" />
  <window width="1572" height="910" x="217" y="38" />
 </preferences>

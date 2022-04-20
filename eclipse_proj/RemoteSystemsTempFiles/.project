@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>RemoteSystemsTempFiles</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.rse.ui.remoteSystemsTempNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>root?192.168.1.16</name>
+			<type>2</type>
+			<locationURI>rse://192.168.1.16/root?192.168.1.16</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
