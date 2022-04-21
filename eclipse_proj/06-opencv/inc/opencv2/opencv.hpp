@@ -51,7 +51,6 @@
 // Core library is always included --> without no OpenCV functionality available
 #include "opencv2/core.hpp"
 
-/*
 // Then the optional modules are checked
 #ifdef HAVE_OPENCV_CALIB3D
 #include "opencv2/calib3d.hpp"
@@ -101,7 +100,6 @@
 #ifdef HAVE_OPENCV_VIZ
 #include "opencv2/viz.hpp"
 #endif
-*/
 
 // Finally CUDA specific entries are checked and added
 #ifdef HAVE_OPENCV_CUDAARITHM

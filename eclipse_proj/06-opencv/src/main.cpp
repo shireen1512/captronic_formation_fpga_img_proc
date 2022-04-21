@@ -127,7 +127,7 @@ int main(int argc, char **argv) {
     bool rr = false ;
     try
     {
-        rr = imwrite("alpha.png", img, compression_params);
+        //rr = imwrite("alpha.png", img, compression_params);
     }
     catch (const cv::Exception& ex)
     {

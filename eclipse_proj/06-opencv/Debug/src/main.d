@@ -26,7 +26,10 @@ src/main.o: ../src/main.cpp \
  /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/core/optim.hpp \
  /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/core/ovx.hpp \
  /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/core/cvdef.h \
- /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgcodecs.hpp
+ /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgcodecs.hpp \
+ /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgproc.hpp \
+ /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgproc/imgproc_c.h \
+ /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgproc/types_c.h
 
 /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/opencv.hpp:
 
@@ -83,3 +86,9 @@ src/main.o: ../src/main.cpp \
 /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/core/cvdef.h:
 
 /home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgcodecs.hpp:
+
+/home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgproc.hpp:
+
+/home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgproc/imgproc_c.h:
+
+/home/jmecodol/de10nano-wd/captronic_formation_fpga_img_proc/eclipse_proj/06-opencv/inc/opencv2/imgproc/types_c.h:
