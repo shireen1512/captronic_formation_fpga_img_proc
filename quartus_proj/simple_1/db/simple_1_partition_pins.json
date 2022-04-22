@@ -1,0 +1,173 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pix1_mean7",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean6",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean5",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean4",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean3",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean2",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean1",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean0",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean27",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean26",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean25",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean24",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean23",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean22",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean21",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean20",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean37",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean36",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean35",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean34",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean33",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean32",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean31",
+					"strict" : false
+				},
+				{
+					"name" : "pix1_mean30",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pix1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
