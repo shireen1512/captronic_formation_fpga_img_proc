@@ -27,5 +27,6 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+root?192.168.100.60 \
 src \
 

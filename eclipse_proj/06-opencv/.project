@@ -24,4 +24,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>root?192.168.100.60</name>
+			<type>2</type>
+			<locationURI>rse://192.168.100.60/root?192.168.100.60</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
