@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/driver_irq/kernel/Module.symvers := sed 's/\.ko$$/\.o/' /home/ubuntu/driver_irq/kernel/modules.order | scripts/mod/modpost    -o /home/ubuntu/driver_irq/kernel/Module.symvers -e -i Module.symvers   -T -

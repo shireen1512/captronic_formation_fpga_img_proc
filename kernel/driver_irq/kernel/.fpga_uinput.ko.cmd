@@ -1,0 +1,1 @@
+cmd_/home/ubuntu/driver_irq/kernel/fpga_uinput.ko := arm-linux-gnueabihf-ld -r -EL --build-id=sha1  -T scripts/module.lds -o /home/ubuntu/driver_irq/kernel/fpga_uinput.ko /home/ubuntu/driver_irq/kernel/fpga_uinput.o /home/ubuntu/driver_irq/kernel/fpga_uinput.mod.o;  true
