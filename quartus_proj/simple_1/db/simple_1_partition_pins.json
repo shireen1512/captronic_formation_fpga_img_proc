@@ -4,99 +4,131 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "pix1_mean7",
+					"name" : "pix1_mean[7]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean6",
+					"name" : "pix1_mean[6]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean5",
+					"name" : "pix1_mean[5]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean4",
+					"name" : "pix1_mean[4]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean3",
+					"name" : "pix1_mean[3]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean2",
+					"name" : "pix1_mean[2]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean1",
+					"name" : "pix1_mean[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean0",
+					"name" : "pix1_mean[0]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean27",
+					"name" : "pix2_mean[7]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean26",
+					"name" : "pix2_mean[6]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean25",
+					"name" : "pix2_mean[5]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean24",
+					"name" : "pix2_mean[4]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean23",
+					"name" : "pix2_mean[3]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean22",
+					"name" : "pix2_mean[2]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean21",
+					"name" : "pix2_mean[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean20",
+					"name" : "pix2_mean[0]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean37",
+					"name" : "pix3_mean[7]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean36",
+					"name" : "pix3_mean[6]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean35",
+					"name" : "pix3_mean[5]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean34",
+					"name" : "pix3_mean[4]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean33",
+					"name" : "pix3_mean[3]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean32",
+					"name" : "pix3_mean[2]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean31",
+					"name" : "pix3_mean[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1_mean30",
+					"name" : "pix3_mean[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4_mean[0]",
 					"strict" : false
 				},
 				{
@@ -108,15 +140,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "pix2[7]",
-					"strict" : false
-				},
-				{
 					"name" : "pix1[6]",
-					"strict" : false
-				},
-				{
-					"name" : "pix2[6]",
 					"strict" : false
 				},
 				{
@@ -124,15 +148,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "pix2[5]",
-					"strict" : false
-				},
-				{
 					"name" : "pix1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "pix2[4]",
 					"strict" : false
 				},
 				{
@@ -140,15 +156,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "pix2[3]",
-					"strict" : false
-				},
-				{
 					"name" : "pix1[2]",
-					"strict" : false
-				},
-				{
-					"name" : "pix2[2]",
 					"strict" : false
 				},
 				{
@@ -156,11 +164,99 @@
 					"strict" : false
 				},
 				{
+					"name" : "pix1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pix2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pix4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[1]",
+					"strict" : false
+				},
+				{
 					"name" : "pix2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "pix1[0]",
+					"name" : "pix4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pix3[0]",
 					"strict" : false
 				},
 				{
