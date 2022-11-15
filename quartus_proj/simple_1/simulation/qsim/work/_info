@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jm/github/captronic_formation_fpga_img_proc/quartus_proj/simple_1/simulation/qsim
+Esimple_3
+Z1 w1668520022
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 3HQPc5MVbmOPN?>a5EBYj2
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 jZ]H46BQLgIP5mfRTO`3B1
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 ^Ch;U@;bMk1;>A2B<UV`k2
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 4
+R0
+Z11 8simple_1.vho
+Z12 Fsimple_1.vho
+l0
+L39 1
+VAQ0=9S^GhW0I76oO;]ae@0
+!s100 CXdh0XAP1bKMog3nmjcLk1
+Z13 OV;C;2020.1;71
+32
+Z14 !s110 1668520023
+!i10b 1
+Z15 !s108 1668520023.000000
+Z16 !s90 -work|work|simple_1.vho|
+Z17 !s107 simple_1.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 8 simple_3 0 22 AQ0=9S^GhW0I76oO;]ae@0
+!i122 4
+l315
+L121 3235
+V^n]9;Ta?E?g16T2Gja3D31
+!s100 B5]z4m@<Go32EjJfSb4V83
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Esimple_3_vhd_vec_tst
+Z20 w1668520021
+R8
+R9
+!i122 5
+R0
+Z21 8Waveform1.vwf.vht
+Z22 FWaveform1.vwf.vht
+l0
+L32 1
+V]KQHC[dJa9IDBKOW?EAiR0
+!s100 1T9gG3_3Jkbj@N]9`MA2b3
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform1.vwf.vht|
+Z24 !s107 Waveform1.vwf.vht|
+!i113 1
+R18
+R19
+Asimple_3_arch
+R8
+R9
+Z25 DEx4 work 20 simple_3_vhd_vec_tst 0 22 ]KQHC[dJa9IDBKOW?EAiR0
+!i122 5
+l59
+Z26 L34 244
+Z27 VWe9fhWc?4TFT9HiD?>[P51
+Z28 !s100 Yo4d6=Ne7ZK?RZF;1KRCX3
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 1
+R18
+R19

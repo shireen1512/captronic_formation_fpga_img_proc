@@ -13,6 +13,11 @@ ll -h
 ## 3. Se connecter au Linux du DE10-nano
 sudo apt-get install gtkterm
 gtkterm
+screen /dev/ttyUSB0 115200
+# quitter avec :
+#  <ctrl>+'a'
+#  '\'
+#  'y'
 
 ## 4. Quelle distribution est utiliée ?
 lsb_release -a
