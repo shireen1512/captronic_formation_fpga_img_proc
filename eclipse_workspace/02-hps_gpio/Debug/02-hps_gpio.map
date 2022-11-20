@@ -1,0 +1,621 @@
+Membre d'archive inclu pour satisfaire la référence par fichier (symbole)
+
+/home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                              /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o (__libc_csu_init)
+
+Sections d'entrée éliminées
+
+ .rodata.cst4   0x0000000000000000        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .ARM.extab     0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .data          0x0000000000000000        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .bss           0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .data          0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .bss           0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .data          0x0000000000000000        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .group         0x0000000000000000        0x8 ./src/main.o
+ .text          0x0000000000000000        0x0 ./src/main.o
+ .data          0x0000000000000000        0x0 ./src/main.o
+ .bss           0x0000000000000000        0x0 ./src/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ./src/main.o
+ .data          0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .bss           0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .text          0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+ .data          0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+ .bss           0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+ .text          0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+ .data          0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+ .bss           0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+Configuration mémoire
+
+Nom              Origine            Longueur           Attributs
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Script de l'éditeurs de liens and table de projection mémoire
+
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+LOAD ./src/main.o
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/libgcc.a
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libgcc_s.so
+START GROUP
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libgcc_s.so.1
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/libgcc.a
+END GROUP
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc.so
+START GROUP
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/lib/libc.so.6
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/lib/ld-linux-armhf.so.3
+END GROUP
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/libgcc.a
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libgcc_s.so
+START GROUP
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/../../../../arm-linux-gnueabihf/lib/libgcc_s.so.1
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/libgcc.a
+END GROUP
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+                [!provide]                        PROVIDE (__executable_start, SEGMENT_START ("text-segment", 0x10000))
+                0x0000000000010154                . = (SEGMENT_START ("text-segment", 0x10000) + SIZEOF_HEADERS)
+
+.interp         0x0000000000010154       0x19
+ *(.interp)
+ .interp        0x0000000000010154       0x19 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.note.ABI-tag   0x0000000000010170       0x20
+ .note.ABI-tag  0x0000000000010170       0x20 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.note.gnu.build-id
+                0x0000000000010190       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000010190       0x24 linker stubs
+
+.hash           0x00000000000101b4       0x38
+ *(.hash)
+ .hash          0x00000000000101b4       0x38 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000000101ec       0x90
+ *(.dynsym)
+ .dynsym        0x00000000000101ec       0x90 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.dynstr         0x000000000001027c       0x58
+ *(.dynstr)
+ .dynstr        0x000000000001027c       0x58 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.gnu.version    0x00000000000102d4       0x12
+ *(.gnu.version)
+ .gnu.version   0x00000000000102d4       0x12 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.gnu.version_d  0x00000000000102e8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000102e8        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.gnu.version_r  0x00000000000102e8       0x20
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000102e8       0x20 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.rel.dyn        0x0000000000010308        0x8
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro .rel.data.rel.ro.* .rel.gnu.linkonce.d.rel.ro.*)
+ .rel.data.rel.ro
+                0x0000000000010308        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x0000000000010308        0x8 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x0000000000010310        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                [!provide]                        PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000010310        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                [!provide]                        PROVIDE (__rel_iplt_end, .)
+
+.rela.dyn       0x0000000000010310        0x0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+                [!provide]                        PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end, .)
+
+.rel.plt        0x0000000000010310       0x40
+ *(.rel.plt)
+ .rel.plt       0x0000000000010310       0x40 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.rela.plt
+ *(.rela.plt)
+
+.init           0x0000000000010350        0xc
+ *(SORT(.init))
+ .init          0x0000000000010350        0x8 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+                0x0000000000010350                _init
+ .init          0x0000000000010358        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+.plt            0x000000000001035c       0x74
+ *(.plt)
+ .plt           0x000000000001035c       0x74 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                0x0000000000010370                usleep@@GLIBC_2.4
+                0x000000000001037c                puts@@GLIBC_2.4
+                0x0000000000010388                __libc_start_main@@GLIBC_2.4
+                0x00000000000103a0                open@@GLIBC_2.4
+                0x00000000000103ac                mmap@@GLIBC_2.4
+                0x00000000000103b8                abort@@GLIBC_2.4
+                0x00000000000103c4                close@@GLIBC_2.4
+
+.iplt           0x00000000000103d0        0x0
+ *(.iplt)
+ .iplt          0x00000000000103d0        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.text           0x00000000000103d0      0x280
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000000103d0       0x30 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                0x00000000000103d0                _start
+ .text          0x0000000000010400       0x24 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .text          0x0000000000010424       0x6c /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+ .text.main     0x0000000000010490      0x180 ./src/main.o
+                0x0000000000010490                main
+ .text          0x0000000000010610       0x40 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                0x0000000000010610                __libc_csu_init
+                0x000000000001064c                __libc_csu_fini
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x0000000000010650        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000010650        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x0000000000010650        0x0 linker stubs
+ *(.v4_bx)
+ .v4_bx         0x0000000000010650        0x0 linker stubs
+
+.fini           0x0000000000010650        0x8
+ *(SORT(.fini))
+ .fini          0x0000000000010650        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+                0x0000000000010650                _fini
+ .fini          0x0000000000010654        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x0000000000010658       0x96
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000010658       0x96 ./src/main.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                [!provide]                        PROVIDE (__exidx_start, .)
+
+.ARM.exidx      0x00000000000106f0        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x00000000000106f0        0x8 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                [!provide]                        PROVIDE (__exidx_end, .)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x00000000000106f8        0x4
+ *(.eh_frame)
+ .eh_frame      0x00000000000106f8        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000000020f10                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000020f10        0x0
+                [!provide]                        PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000000020f10        0x4
+                0x0000000000020f10                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000020f10        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+                0x0000000000020f14                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000000020f14        0x4
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000020f14        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+                [!provide]                        PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000020f18        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000020f18        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+
+.dynamic        0x0000000000020f18       0xe8
+ *(.dynamic)
+ .dynamic       0x0000000000020f18       0xe8 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                0x0000000000020f18                _DYNAMIC
+                0x0000000000021000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.got            0x0000000000021000       0x30
+ *(.got.plt)
+ .got.plt       0x0000000000021000       0x2c /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                0x0000000000021000                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x000000000002102c        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ *(.got)
+ .got           0x000000000002102c        0x4 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ *(.igot)
+
+.data           0x0000000000021030        0x0
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+
+.tm_clone_table
+                0x0000000000021030        0x0
+ .tm_clone_table
+                0x0000000000021030        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+ .tm_clone_table
+                0x0000000000021030        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+
+.data1
+ *(.data1)
+                0x0000000000021030                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x0000000000021030                . = .
+                0x0000000000021030                __bss_start = .
+                0x0000000000021030                __bss_start__ = .
+
+.bss            0x0000000000021030        0x4
+ *(.dynbss)
+ .dynbss        0x0000000000021030        0x0 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000021030        0x1 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+ *(COMMON)
+                0x0000000000021034                . = ALIGN ((. != 0x0)?0x4:0x1)
+ *fill*         0x0000000000021031        0x3 
+                0x0000000000021034                _bss_end__ = .
+                0x0000000000021034                __bss_end__ = .
+                0x0000000000021034                . = ALIGN (0x4)
+                0x0000000000021034                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000021034                . = ALIGN (0x4)
+                0x0000000000021034                __end__ = .
+                0x0000000000021034                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000000021034                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x24
+ *(.comment)
+ .comment       0x0000000000000000       0x24 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                                         0x25 (taille avant relaxe)
+ .comment       0x0000000000000024       0x25 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+ .comment       0x0000000000000024       0x25 ./src/main.o
+ .comment       0x0000000000000024       0x25 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .comment       0x0000000000000024       0x25 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+
+.ARM.attributes
+                0x0000000000000000       0x37
+ .ARM.attributes
+                0x0000000000000000       0x33 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .ARM.attributes
+                0x0000000000000033       0x23 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .ARM.attributes
+                0x0000000000000056       0x33 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtbegin.o
+ .ARM.attributes
+                0x0000000000000089       0x3d ./src/main.o
+ .ARM.attributes
+                0x00000000000000c6       0x35 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .ARM.attributes
+                0x00000000000000fb       0x33 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../lib/gcc/arm-linux-gnueabihf/7.5.0/crtend.o
+ .ARM.attributes
+                0x000000000000012e       0x23 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0xd0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x38 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .debug_aranges
+                0x0000000000000038       0x30 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .debug_aranges
+                0x0000000000000068       0x20 ./src/main.o
+ .debug_aranges
+                0x0000000000000088       0x20 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .debug_aranges
+                0x00000000000000a8       0x28 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x7a6
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x120 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .debug_info    0x0000000000000120       0x9a /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .debug_info    0x00000000000001ba      0x3c9 ./src/main.o
+ .debug_info    0x0000000000000583      0x189 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .debug_info    0x000000000000070c       0x9a /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+.debug_abbrev   0x0000000000000000      0x2a0
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x52 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .debug_abbrev  0x0000000000000052       0x12 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .debug_abbrev  0x0000000000000064      0x112 ./src/main.o
+ .debug_abbrev  0x0000000000000176      0x118 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .debug_abbrev  0x000000000000028e       0x12 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+.debug_line     0x0000000000000000      0x79a
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x80 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+ .debug_line    0x0000000000000080       0x6c /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .debug_line    0x00000000000000ec      0x563 ./src/main.o
+ .debug_line    0x000000000000064f       0xf7 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .debug_line    0x0000000000000746       0x54 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+.debug_frame    0x0000000000000000       0x7c
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x38 ./src/main.o
+ .debug_frame   0x0000000000000038       0x44 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_str      0x0000000000000000    0x5401b
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x14d /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
+                                        0x1dd (taille avant relaxe)
+ .debug_str     0x000000000000014d    0x53d43 ./src/main.o
+                                      0x53fa0 (taille avant relaxe)
+ .debug_str     0x0000000000053e90      0x18b /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+                                        0x22e (taille avant relaxe)
+
+.debug_loc      0x0000000000000000       0xdd
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0xdd /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x58
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x28 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
+ .debug_ranges  0x0000000000000028       0x10 ./src/main.o
+ .debug_ranges  0x0000000000000038       0x20 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+
+.debug_macro    0x0000000000000000     0x8efc
+ *(.debug_macro)
+ .debug_macro   0x0000000000000000      0x261 ./src/main.o
+ .debug_macro   0x0000000000000261      0xa8a ./src/main.o
+ .debug_macro   0x0000000000000ceb       0x22 ./src/main.o
+ .debug_macro   0x0000000000000d0d       0x10 ./src/main.o
+ .debug_macro   0x0000000000000d1d      0x18d ./src/main.o
+ .debug_macro   0x0000000000000eaa      0x190 ./src/main.o
+ .debug_macro   0x000000000000103a       0x1c ./src/main.o
+ .debug_macro   0x0000000000001056       0x43 ./src/main.o
+ .debug_macro   0x0000000000001099       0x70 ./src/main.o
+ .debug_macro   0x0000000000001109       0x28 ./src/main.o
+ .debug_macro   0x0000000000001131       0x10 ./src/main.o
+ .debug_macro   0x0000000000001141       0x97 ./src/main.o
+ .debug_macro   0x00000000000011d8       0x5e ./src/main.o
+ .debug_macro   0x0000000000001236       0xe2 ./src/main.o
+ .debug_macro   0x0000000000001318       0x2e ./src/main.o
+ .debug_macro   0x0000000000001346       0x16 ./src/main.o
+ .debug_macro   0x000000000000135c       0x20 ./src/main.o
+ .debug_macro   0x000000000000137c       0x1e ./src/main.o
+ .debug_macro   0x000000000000139a       0x28 ./src/main.o
+ .debug_macro   0x00000000000013c2       0x58 ./src/main.o
+ .debug_macro   0x000000000000141a       0x10 ./src/main.o
+ .debug_macro   0x000000000000142a      0x1c2 ./src/main.o
+ .debug_macro   0x00000000000015ec       0x4b ./src/main.o
+ .debug_macro   0x0000000000001637       0x28 ./src/main.o
+ .debug_macro   0x000000000000165f       0x27 ./src/main.o
+ .debug_macro   0x0000000000001686       0x70 ./src/main.o
+ .debug_macro   0x00000000000016f6      0x190 ./src/main.o
+ .debug_macro   0x0000000000001886       0x52 ./src/main.o
+ .debug_macro   0x00000000000018d8       0x27 ./src/main.o
+ .debug_macro   0x00000000000018ff       0x5f ./src/main.o
+ .debug_macro   0x000000000000195e      0x824 ./src/main.o
+ .debug_macro   0x0000000000002182       0x20 ./src/main.o
+ .debug_macro   0x00000000000021a2       0x1c ./src/main.o
+ .debug_macro   0x00000000000021be      0x1c0 ./src/main.o
+ .debug_macro   0x000000000000237e       0x10 ./src/main.o
+ .debug_macro   0x000000000000238e       0xe6 ./src/main.o
+ .debug_macro   0x0000000000002474       0xc6 ./src/main.o
+ .debug_macro   0x000000000000253a       0x10 ./src/main.o
+ .debug_macro   0x000000000000254a       0x12 ./src/main.o
+ .debug_macro   0x000000000000255c       0x3a ./src/main.o
+ .debug_macro   0x0000000000002596      0x100 ./src/main.o
+ .debug_macro   0x0000000000002696       0xfd ./src/main.o
+ .debug_macro   0x0000000000002793       0x22 ./src/main.o
+ .debug_macro   0x00000000000027b5       0x10 ./src/main.o
+ .debug_macro   0x00000000000027c5       0x2e ./src/main.o
+ .debug_macro   0x00000000000027f3       0x16 ./src/main.o
+ .debug_macro   0x0000000000002809      0x1c9 ./src/main.o
+ .debug_macro   0x00000000000029d2      0x184 ./src/main.o
+ .debug_macro   0x0000000000002b56       0xad ./src/main.o
+ .debug_macro   0x0000000000002c03     0x5a71 ./src/main.o
+ .debug_macro   0x0000000000008674      0x888 ./src/main.o
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(02-hps_gpio.elf elf32-littlearm)
