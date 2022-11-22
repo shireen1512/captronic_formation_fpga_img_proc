@@ -25,7 +25,8 @@ cp config_distro_bootcmd.h config_distro_bootcmd.h.save
 ## cat ~/helpers/patches/config_distro_bootcmd.patch
 # recuperer le patch
 wget https://raw.githubusercontent.com/jmecodol/captronic_formation_fpga_img_proc/main/patches/config_distro_bootcmd.patch
-patch < ~/helpers/patches/config_distro_bootcmd.patch
+patch < config_distro_bootcmd.patch
+## patch < ~/helpers/patches/config_distro_bootcmd.patch
 diff config_distro_bootcmd.h config_distro_bootcmd.h.save 
 
 ## 4. Generer et utiliser une adresses MAC fixe
@@ -33,12 +34,15 @@ cd $DEWD/u-boot
 sudo apt install make
 make -C tools gen_eth_addr
 ./tools/gen_eth_addr 
-vi ~/helpers/patches/socfpga_common.patch
+## vi ~/helpers/patches/socfpga_common.patch
 # changer l'adresse MAC
 
 cd include/configs/
+wget https://raw.githubusercontent.com/jmecodol/captronic_formation_fpga_img_proc/main/patches/socfpga_common.patch
 cp socfpga_common.h socfpga_common.h.save
-patch < ~/helpers/patches/socfpga_common.patch
+patch < socfpga_common.patch
+vi socfpga_common.h
+diff socfpga_common.h socfpga_common.h.save
 
 # on peut aussi changer l'adresse MAX manuellement
 vi socfpga_common.h
@@ -66,6 +70,11 @@ cd ~/intelFPGA/20.1/embedded/host_tools/linaro
 #        GCCFILE=gcc-linaro-7.5.0-2019.12-i686_arm-eabi
 #        GCCFILE=gcc-linaro-7.5.0-2019.12-x86_64_arm-eabi
 #fi
+
+## et aussi la ligne (vers la fin) :
+../configure --target=arm-eabi --disable-newlib-supplied-syscalls --disable-multilib
+###########
+
 ./install_linaro.sh
 
 cd $DEWD/u-boot
@@ -76,6 +85,13 @@ make socfpga_de10_nano_defconfig
 make -j 9
 # le resultat se trouve dans $DEWD/u-boot/u-boot-with-spl.sfp
 ls -l u-boot-with-spl.sfp
+
+# copier le fichier u-boot dans /home/data
+cp u-boot-with-spl.sfp /home/data/u-boot-with-spl.sfp.NAME
+# sur le PC de developpement :
+### sudo dd if=u-boot-with-spl.sfp.NAME of=/dev/sdb3 bs=64k seek=0 oflag=sync
+
+
 
 ## 6. Compiler le noyau Linux pour SoC FPGA fourni par Altera
 cd $DEWD
@@ -117,6 +133,7 @@ sudo chroot rootfs /usr/bin/qemu-arm-static /bin/bash -i
 # On realise les opérations de configuration de l’OS comme si l’on etait sur la cible :
 # changer le mot de passe
 echo 'root:temppwd' | chpasswd
+### Attention : chaque ligne doit etre executee UNE a la fois !!
 apt install vim -y
 apt install locales -y
 apt install patch -y
@@ -188,6 +205,24 @@ cd $DEWD/rootfs
 rm ../debianRootFS.tar.bz2
 sudo tar -cjpf ../debianRootFS.tar.bz2 .
 ll -h .. |grep "debianRootFS.tar.bz2"
+
+# Sur le PC d'Atelier
+USER=masoomeh|cedric
+mkdir ~/Bureau/$USER
+cd ~/Bureau/$USER
+scp $USER@151.80.152.63:~/de10nano-wd/u-boot/u-boot-with-spl.sfp .
+scp $USER@151.80.152.63:~/de10nano-wd/debianRootFS.tar.bz2 .
+scp $USER@151.80.152.63:~/de10nano-wd/linux-socfpga-socfpga-5.16/arch/arm/boot/zImage .
+scp $USER@151.80.152.63:~/de10nano-wd/linux-socfpga-socfpga-5.16/arch/arm/boot/dts/socfpga_cyclone5_socdk.dtb .
+scp $USER@151.80.152.63:~/de10nano-wd/linux-socfpga-socfpga-5.16/arch/arm/boot/dts/socfpga_cyclone5_de0_nano_soc.dtb .
+
+
+
+mkdir rootfs/
+cp debianRootFS.tar.bz2 rootfs/
+cd rootfs/
+sudo tar -xf debianRootFS.tar.bz2
+cd ..
 
 
 
