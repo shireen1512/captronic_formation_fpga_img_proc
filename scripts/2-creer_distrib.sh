@@ -22,7 +22,9 @@ cd include/
 # less config_distro_bootcmd.h
 # sauvegarder la version anterieure des commandes au demarrage config_distro_bootcmd.h
 cp config_distro_bootcmd.h config_distro_bootcmd.h.save
-cat ~/helpers/patches/config_distro_bootcmd.patch
+## cat ~/helpers/patches/config_distro_bootcmd.patch
+# recuperer le patch
+wget https://raw.githubusercontent.com/jmecodol/captronic_formation_fpga_img_proc/main/patches/config_distro_bootcmd.patch
 patch < ~/helpers/patches/config_distro_bootcmd.patch
 diff config_distro_bootcmd.h config_distro_bootcmd.h.save 
 
