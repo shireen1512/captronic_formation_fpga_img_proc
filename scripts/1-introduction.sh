@@ -1,5 +1,19 @@
 #!/bin/bash
 
+## connexionb au seveur de calcul
+MY_USER=ubuntu / cedric [$cedric1] / stephane [$stephane1] / masoomeh [$masoomeh1] / formateur [$formateur1]
+SERVER_ADDR=151.80.152.63
+ssh $MY_USER@$SERVER_ADDR
+
+## connexion au labo.
+MY_USER=ubuntu / cedric [$$$$$$$$1] / stephane [$$$$$$$$1] / masoomeh [$$$$$$$$1] / formateur [$$$$$$$$1]
+LABO_ADDR=90.37.108.169
+ssh $MY_USER@$SERVER_ADDR
+
+
+
+
+
 ## 1. Récupérer l’image de la carte SD fournie par Terasic
 export DEWD=$HOME/de10nano-wd
 mkdir -p $DEWD/official_sd
