@@ -10,8 +10,8 @@ MY_USER=ubuntu / cedric [$$$$$$$$1] / stephane [$$$$$$$$1] / masoomeh [$$$$$$$$1
 LABO_ADDR=90.37.108.169
 ssh $MY_USER@$SERVER_ADDR
 
-
-
+## lister les utilisateurs connectes :
+who
 
 
 ## 1. Récupérer l’image de la carte SD fournie par Terasic
@@ -23,6 +23,8 @@ unzip de10_nano_linux_console.zip
 ll -h
 
 ## 2. Graver l'image (2Go) de10_nano_linux_console.img sur une carte SD de 4Go minimum
+# optionnel en ligne de commande :
+
 
 ## 3. Se connecter au Linux du DE10-nano
 sudo apt-get install gtkterm
