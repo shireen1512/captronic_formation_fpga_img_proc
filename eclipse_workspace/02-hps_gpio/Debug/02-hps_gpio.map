@@ -501,13 +501,13 @@ LOAD /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnu
  .debug_abbrev  0x0000000000000176      0x118 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
  .debug_abbrev  0x000000000000028e       0x12 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
 
-.debug_line     0x0000000000000000      0x79a
+.debug_line     0x0000000000000000      0x79c
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000       0x80 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crt1.o
  .debug_line    0x0000000000000080       0x6c /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crti.o
- .debug_line    0x00000000000000ec      0x563 ./src/main.o
- .debug_line    0x000000000000064f       0xf7 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
- .debug_line    0x0000000000000746       0x54 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
+ .debug_line    0x00000000000000ec      0x565 ./src/main.o
+ .debug_line    0x0000000000000651       0xf7 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/libc_nonshared.a(elf-init.oS)
+ .debug_line    0x0000000000000748       0x54 /home/jm/intelFPGA/20.1/embedded/host_tools/linaro/gcc/bin/../arm-linux-gnueabihf/libc/usr/lib/crtn.o
 
 .debug_frame    0x0000000000000000       0x7c
  *(.debug_frame)

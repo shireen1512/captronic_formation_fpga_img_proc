@@ -1,5 +1,10 @@
 	soc_system u0 (
+		.a_export                (<connected-to-a_export>),                //               a.export
+		.b_export                (<connected-to-b_export>),                //               b.export
 		.clk_clk                 (<connected-to-clk_clk>),                 //             clk.clk
+		.data_data               (<connected-to-data_data>),               //            data.data
+		.data_trigger_export     (<connected-to-data_trigger_export>),     //    data_trigger.export
+		.datavalid_datavalid     (<connected-to-datavalid_datavalid>),     //       datavalid.datavalid
 		.hps_0_h2f_reset_reset_n (<connected-to-hps_0_h2f_reset_reset_n>), // hps_0_h2f_reset.reset_n
 		.memory_mem_a            (<connected-to-memory_mem_a>),            //          memory.mem_a
 		.memory_mem_ba           (<connected-to-memory_mem_ba>),           //                .mem_ba
@@ -17,6 +22,7 @@
 		.memory_mem_odt          (<connected-to-memory_mem_odt>),          //                .mem_odt
 		.memory_mem_dm           (<connected-to-memory_mem_dm>),           //                .mem_dm
 		.memory_oct_rzqin        (<connected-to-memory_oct_rzqin>),        //                .oct_rzqin
-		.reset_reset_n           (<connected-to-reset_reset_n>)            //           reset.reset_n
+		.reset_reset_n           (<connected-to-reset_reset_n>),           //           reset.reset_n
+		.ret_export              (<connected-to-ret_export>)               //             ret.export
 	);
 

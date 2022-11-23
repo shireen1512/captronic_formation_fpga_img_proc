@@ -1,6 +1,11 @@
 
 module soc_system (
+	a_export,
+	b_export,
 	clk_clk,
+	data_data,
+	data_trigger_export,
+	datavalid_datavalid,
 	hps_0_h2f_reset_reset_n,
 	memory_mem_a,
 	memory_mem_ba,
@@ -18,9 +23,15 @@ module soc_system (
 	memory_mem_odt,
 	memory_mem_dm,
 	memory_oct_rzqin,
-	reset_reset_n);	
+	reset_reset_n,
+	ret_export);	
 
+	output	[31:0]	a_export;
+	output	[31:0]	b_export;
 	input		clk_clk;
+	output	[255:0]	data_data;
+	output	[31:0]	data_trigger_export;
+	output		datavalid_datavalid;
 	output		hps_0_h2f_reset_reset_n;
 	output	[14:0]	memory_mem_a;
 	output	[2:0]	memory_mem_ba;
@@ -39,4 +50,5 @@ module soc_system (
 	output	[3:0]	memory_mem_dm;
 	input		memory_oct_rzqin;
 	input		reset_reset_n;
+	input	[31:0]	ret_export;
 endmodule

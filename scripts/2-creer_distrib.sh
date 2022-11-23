@@ -206,23 +206,7 @@ rm ../debianRootFS.tar.bz2
 sudo tar -cjpf ../debianRootFS.tar.bz2 .
 ll -h .. |grep "debianRootFS.tar.bz2"
 
-# Sur le PC d'Atelier
-USER=masoomeh|cedric
-mkdir ~/Bureau/$USER
-cd ~/Bureau/$USER
-scp $USER@151.80.152.63:~/de10nano-wd/u-boot/u-boot-with-spl.sfp .
-scp $USER@151.80.152.63:~/de10nano-wd/debianRootFS.tar.bz2 .
-scp $USER@151.80.152.63:~/de10nano-wd/linux-socfpga-socfpga-5.16/arch/arm/boot/zImage .
-scp $USER@151.80.152.63:~/de10nano-wd/linux-socfpga-socfpga-5.16/arch/arm/boot/dts/socfpga_cyclone5_socdk.dtb .
-scp $USER@151.80.152.63:~/de10nano-wd/linux-socfpga-socfpga-5.16/arch/arm/boot/dts/socfpga_cyclone5_de0_nano_soc.dtb .
 
-
-
-mkdir rootfs/
-cp debianRootFS.tar.bz2 rootfs/
-cd rootfs/
-sudo tar -xf debianRootFS.tar.bz2
-cd ..
 
 
 

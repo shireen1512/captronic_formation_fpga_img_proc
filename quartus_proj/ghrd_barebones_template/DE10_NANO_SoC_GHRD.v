@@ -44,12 +44,29 @@ wire [6:0]	fpga_led_internal;
 assign LED[7: 1] = fpga_led_internal;
 assign fpga_clk_50 = FPGA_CLK1_50;
 
+wire [31:0]	variable_a;
+wire [31:0]	variable_b;
+reg [31:0]	variable_axb;
+reg [31:0] data_trigger_export ;
+always @(posedge fpga_clk_50) begin
+	variable_axb <= variable_a + variable_b ;
+end
+// ram
+reg         sdramValeurValide ;
+reg [255:0] sdramValeurLue ;
 
 //=======================================================
 //  Structural coding
 //=======================================================
 soc_system u0(
-               //Clock&Reset
+					.a_export(variable_a),                //               a.export
+					.b_export(variable_b),                //               b.export
+					.ret_export(variable_axb),
+					.data_trigger_export(data_trigger_export),
+					// sdram
+					.datavalid_datavalid(sdramValeurValide),
+					.data_data(sdramValeurLue),
+              //Clock&Reset
                .clk_clk(FPGA_CLK1_50),                                      //                            clk.clk
                .reset_reset_n(hps_fpga_reset_n),                            //                          reset.reset_n
                //HPS ddr3
