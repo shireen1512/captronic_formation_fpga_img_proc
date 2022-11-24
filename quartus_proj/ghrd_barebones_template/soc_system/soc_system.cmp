@@ -3,6 +3,7 @@
 			a_export                : out   std_logic_vector(31 downto 0);                     -- export
 			b_export                : out   std_logic_vector(31 downto 0);                     -- export
 			clk_clk                 : in    std_logic                      := 'X';             -- clk
+			cpt_cpt                 : out   std_logic_vector(18 downto 0);                     -- cpt
 			data_data               : out   std_logic_vector(255 downto 0);                    -- data
 			data_trigger_export     : out   std_logic_vector(31 downto 0);                     -- export
 			datavalid_datavalid     : out   std_logic;                                         -- datavalid

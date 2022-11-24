@@ -23,6 +23,7 @@
 		.memory_mem_dm           (<connected-to-memory_mem_dm>),           //                .mem_dm
 		.memory_oct_rzqin        (<connected-to-memory_oct_rzqin>),        //                .oct_rzqin
 		.reset_reset_n           (<connected-to-reset_reset_n>),           //           reset.reset_n
-		.ret_export              (<connected-to-ret_export>)               //             ret.export
+		.ret_export              (<connected-to-ret_export>),              //             ret.export
+		.cpt_cpt                 (<connected-to-cpt_cpt>)                  //             cpt.cpt
 	);
 

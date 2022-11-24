@@ -7,6 +7,7 @@ module soc_system (
 		output wire [31:0]  a_export,                //               a.export
 		output wire [31:0]  b_export,                //               b.export
 		input  wire         clk_clk,                 //             clk.clk
+		output wire [18:0]  cpt_cpt,                 //             cpt.cpt
 		output wire [255:0] data_data,               //            data.data
 		output wire [31:0]  data_trigger_export,     //    data_trigger.export
 		output wire         datavalid_datavalid,     //       datavalid.datavalid
@@ -230,7 +231,8 @@ module soc_system (
 		.avm_m0_read          (read_ram_0_m0_read),              //          .read
 		.out_dataValid        (datavalid_datavalid),             // datavalid.datavalid
 		.out_data             (data_data),                       //      data.data
-		.start_process        (trigger_32bit_0_trigger_trigger)  //   trigger.trigger
+		.start_process        (trigger_32bit_0_trigger_trigger), //   trigger.trigger
+		.out_cpt              (cpt_cpt)                          //       cpt.cpt
 	);
 
 	trigger_32bit trigger_32bit_0 (

@@ -2,16 +2,14 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
--- ecris la valeur 55 en ram a la premiere adresse disponible en partage (512 Mo)apt update
+-- lis N valeurs en ram a partir de la premiere adresse disponible en partage (512 Mo)
+-- apt update
 -- apt install busybox
--- alias mem='busybox devmem'
 -- ## ecriture dans la RAM
--- mem 0x20000000 w 0xAA
--- ## lancer l'execution de la sequence sur le FPGA
--- mem 0xC0000000 w 0x1
+-- busybox devmem 0x20000000 w 0xAA
+-- busybox devmem 0xC0000000 w 0x1
 -- ## lire la ram a l'adresse 0x20000000
--- mem 0x20000000
--- 0x00000016
+-- busybox devmem 0x20000000
 
 ENTITY read_ram IS
     PORT (
@@ -23,8 +21,9 @@ ENTITY read_ram IS
         avm_m0_waitrequest   : IN STD_LOGIC := '0';
         avm_m0_readdata      : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
         avm_m0_readdatavalid : IN STD_LOGIC := '0';
-        out_dataValid        : OUT STD_LOGIC := '0';
-        out_data             : OUT STD_LOGIC_VECTOR(255 DOWNTO 0)
+        out_dataValid        : OUT STD_LOGIC := '0' ;
+        out_data             : OUT STD_LOGIC_VECTOR(255 DOWNTO 0) := std_logic_vector(to_unsigned(0, 256)) ;
+		  out_cpt					: OUT STD_LOGIC_VECTOR(18 DOWNTO 0) := std_logic_vector(to_unsigned(0, 19))
 		);
 END read_ram;
 
@@ -76,16 +75,23 @@ BEGIN
 				avm_m0_address  <= std_logic_vector(to_unsigned(0, 32 )) ;
 				out_dataValid   <= '0' ;
 				out_data        <= std_logic_vector(to_unsigned(0, 256)) ;
+				out_cpt			 <= std_logic_vector(to_unsigned(0, 19)) ;
 			when ask_val =>
 				avm_m0_read     <= '1' ;
 				avm_m0_address <= std_logic_vector(to_unsigned(536870912+(256*cpt), 32 )) ;
 				out_dataValid   <= '0' ;
 				out_data        <= std_logic_vector(to_unsigned(0, 256)) ;
+				out_cpt			 <= std_logic_vector(to_unsigned(0, 19)) ;
 			when wait_val =>
 				avm_m0_read     <= '0' ;
 				avm_m0_address  <= std_logic_vector(to_unsigned(0, 32 )) ;
 				out_dataValid   <= avm_m0_readdatavalid ;
 				out_data        <= avm_m0_readdata ;
+				if avm_m0_readdatavalid = '1' then
+					out_cpt			 <= std_logic_vector(to_unsigned(cpt, 19)) ;
+				else
+					out_cpt			 <= std_logic_vector(to_unsigned(0, 19)) ;
+				end if ;
 		end case;
 	end process;
 	

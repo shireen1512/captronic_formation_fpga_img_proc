@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="soc_system" kind="system" version="21.1" fabric="QSYS">
  <!-- Format version 21.1 850 (Future versions may contain additional information.) -->
- <!-- 2022.11.23.20:19:58 -->
+ <!-- 2022.11.24.08:27:17 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1669231143</value>
+  <value>1669274784</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -42075,7 +42075,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="associatedReset">
     <type>java.lang.String</type>
-    <value></value>
+    <value>reset</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -42104,6 +42104,51 @@ parameters are a RESULT of the module parameters. -->
     <direction>Input</direction>
     <width>1</width>
     <role>trigger</role>
+   </port>
+  </interface>
+  <interface name="cpt" kind="conduit_end" version="21.1">
+   <!-- The connection points exposed by a module instance for the
+particular module parameters. Connection points and their
+parameters are a RESULT of the module parameters. -->
+   <parameter name="associatedClock">
+    <type>java.lang.String</type>
+    <value>clock</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="associatedReset">
+    <type>java.lang.String</type>
+    <value></value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="deviceFamily">
+    <type>java.lang.String</type>
+    <value>UNKNOWN</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <parameter name="generateLegacySim">
+    <type>boolean</type>
+    <value>false</value>
+    <derived>false</derived>
+    <enabled>true</enabled>
+    <visible>true</visible>
+    <valid>true</valid>
+   </parameter>
+   <type>conduit</type>
+   <isStart>false</isStart>
+   <port>
+    <name>out_cpt</name>
+    <direction>Output</direction>
+    <width>19</width>
+    <role>cpt</role>
    </port>
   </interface>
  </module>
@@ -42626,7 +42671,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="associatedReset">
     <type>java.lang.String</type>
-    <value></value>
+    <value>reset</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -50316,7 +50361,7 @@ parameters are a RESULT of the module parameters. -->
   <version>21.1</version>
  </plugin>
  <plugin>
-  <instanceCount>10</instanceCount>
+  <instanceCount>11</instanceCount>
   <name>conduit_end</name>
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
@@ -50460,5 +50505,5 @@ parameters are a RESULT of the module parameters. -->
   <version>21.1</version>
  </plugin>
  <reportVersion>21.1 850</reportVersion>
- <uniqueIdentifier>107B44E8B64A00000184A5EE7B01</uniqueIdentifier>
+ <uniqueIdentifier>107B44E8B64A00000184A8885D19</uniqueIdentifier>
 </EnsembleReport>

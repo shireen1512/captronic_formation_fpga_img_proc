@@ -24,7 +24,8 @@ module soc_system (
 	memory_mem_dm,
 	memory_oct_rzqin,
 	reset_reset_n,
-	ret_export);	
+	ret_export,
+	cpt_cpt);	
 
 	output	[31:0]	a_export;
 	output	[31:0]	b_export;
@@ -51,4 +52,5 @@ module soc_system (
 	input		memory_oct_rzqin;
 	input		reset_reset_n;
 	input	[31:0]	ret_export;
+	output	[18:0]	cpt_cpt;
 endmodule

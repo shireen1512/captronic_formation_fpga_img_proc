@@ -35,6 +35,14 @@
          type = "boolean";
       }
    }
+   element hps_0.f2h_sdram0_data
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
    element mm_bridge_0
    {
       datum _sortIndex
@@ -57,6 +65,14 @@
       {
          value = "8";
          type = "int";
+      }
+   }
+   element soc_system
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone V";
+         type = "String";
       }
    }
    element soc_system
@@ -167,6 +183,7 @@
    dir="end" />
  <interface name="b" internal="var_b.vout" type="conduit" dir="end" />
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface name="cpt" internal="read_ram_0.cpt" type="conduit" dir="end" />
  <interface name="data" internal="read_ram_0.data" type="conduit" dir="end" />
  <interface name="data_out" internal="write_ram_0.data_out" />
  <interface

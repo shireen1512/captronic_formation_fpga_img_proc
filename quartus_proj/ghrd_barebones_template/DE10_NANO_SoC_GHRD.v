@@ -51,9 +51,11 @@ reg [31:0] data_trigger_export ;
 always @(posedge fpga_clk_50) begin
 	variable_axb <= variable_a + variable_b ;
 end
+
 // ram
 reg         sdramValeurValide ;
 reg [255:0] sdramValeurLue ;
+reg [18:0]  sdram_cpt ;
 
 //=======================================================
 //  Structural coding
@@ -66,6 +68,7 @@ soc_system u0(
 					// sdram
 					.datavalid_datavalid(sdramValeurValide),
 					.data_data(sdramValeurLue),
+					.cpt_cpt(sdram_cpt),
               //Clock&Reset
                .clk_clk(FPGA_CLK1_50),                                      //                            clk.clk
                .reset_reset_n(hps_fpga_reset_n),                            //                          reset.reset_n
